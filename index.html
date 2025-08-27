@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipkart Clone - Online Shopping Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1>Flipkart</h1>
+                    <span>Explore Plus</span>
+                </div>
+
+                <!-- Search Bar -->
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for products, brands and more" id="searchInput">
+                    <button type="button" id="searchBtn">🔍</button>
+                </div>
+
+                <!-- Header Actions -->
+                <div class="header-actions">
+                    <button class="login-btn">Login</button>
+                    <a href="#" class="header-link">Become a Seller</a>
+                    <a href="#" class="header-link">More ▼</a>
+                    <a href="#" class="cart-link">
+                        <span>🛒</span>
+                        Cart
+                        <span class="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+        <div class="container">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Top Offers">
+                    <span>Top Offers</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Grocery">
+                    <span>Grocery</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Mobiles">
+                    <span>Mobiles</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Fashion">
+                    <span>Fashion ▼</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Electronics">
+                    <span>Electronics ▼</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Home">
+                    <span>Home ▼</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Appliances">
+                    <span>Appliances</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Travel">
+                    <span>Travel</span>
+                </li>
+                <li class="nav-item">
+                    <img src="https://via.placeholder.com/64x64" alt="Toys">
+                    <span>Beauty, Toys & More ▼</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Banner Slider -->
+    <section class="banner-slider">
+        <div class="container">
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="https://via.placeholder.com/1200x300" alt="Banner 1">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/1200x300" alt="Banner 2">
+                </div>
+                <div class="slide">
+                    <img src="https://via.placeholder.com/1200x300" alt="Banner 3">
+                </div>
+                <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Sections -->
+    <main class="main-content">
+        <!-- Deals of the Day Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Deals of the Day</h2>
+                    <button class="view-all-btn">VIEW ALL</button>
+                </div>
+                <div class="products-grid" id="dealsProducts">
+                    <!-- Product Cards -->
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Smartphones</h3>
+                        <p class="price">From ₹6,999</p>
+                        <p class="offer">Up to 40% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Laptops</h3>
+                        <p class="price">From ₹29,999</p>
+                        <p class="offer">Up to 30% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Headphones</h3>
+                        <p class="price">From ₹999</p>
+                        <p class="offer">Up to 50% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Smart Watches</h3>
+                        <p class="price">From ₹1,999</p>
+                        <p class="offer">Up to 60% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Cameras</h3>
+                        <p class="price">From ₹19,999</p>
+                        <p class="offer">Up to 25% Off</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fashion Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Fashion Top Deals</h2>
+                    <button class="view-all-btn">VIEW ALL</button>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Men's T-Shirts</h3>
+                        <p class="price">From ₹299</p>
+                        <p class="offer">Up to 70% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Women's Kurtas</h3>
+                        <p class="price">From ₹399</p>
+                        <p class="offer">Up to 60% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Jeans</h3>
+                        <p class="price">From ₹599</p>
+                        <p class="offer">Up to 50% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Shoes</h3>
+                        <p class="price">From ₹799</p>
+                        <p class="offer">Up to 40% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Watches</h3>
+                        <p class="price">From ₹999</p>
+                        <p class="offer">Up to 80% Off</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Home & Kitchen Section -->
+        <section class="product-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Home & Kitchen Essentials</h2>
+                    <button class="view-all-btn">VIEW ALL</button>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Bedsheets</h3>
+                        <p class="price">From ₹299</p>
+                        <p class="offer">Up to 70% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Cookware</h3>
+                        <p class="price">From ₹499</p>
+                        <p class="offer">Up to 50% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Storage</h3>
+                        <p class="price">From ₹199</p>
+                        <p class="offer">Up to 60% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Decor</h3>
+                        <p class="price">From ₹99</p>
+                        <p class="offer">Up to 80% Off</p>
+                    </div>
+                    <div class="product-card">
+                        <img src="https://via.placeholder.com/200x200" alt="Product">
+                        <h3>Kitchen Tools</h3>
+                        <p class="price">From ₹149</p>
+                        <p class="offer">Up to 65% Off</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ABOUT</h3>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Flipkart Stories</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Flipkart Wholesale</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Cancellation & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Infringement</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>POLICY</h3>
+                    <ul>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>SOCIAL</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flipkart Clone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
