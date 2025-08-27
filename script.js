@@ -265,11 +265,36 @@ function handleLogin(event) {
 // Dynamic product loading simulation
 function loadMoreProducts() {
     const productsData = [
-        { name: 'Tablet', price: 'From ₹8,999', offer: 'Up to 35% Off' },
-        { name: 'Power Bank', price: 'From ₹699', offer: 'Up to 65% Off' },
-        { name: 'Earphones', price: 'From ₹399', offer: 'Up to 75% Off' },
-        { name: 'USB Cable', price: 'From ₹149', offer: 'Up to 80% Off' },
-        { name: 'Mouse', price: 'From ₹299', offer: 'Up to 70% Off' }
+        { 
+            name: 'Tablet', 
+            price: 'From ₹8,999', 
+            offer: 'Up to 35% Off',
+            image: 'https://rukminim2.flixcart.com/image/200/200/ktketu80/tablet/f/y/b/sm-t225nzaains-samsung-original-imag6ve3kzphenbx.jpeg?q=70'
+        },
+        { 
+            name: 'Power Bank', 
+            price: 'From ₹699', 
+            offer: 'Up to 65% Off',
+            image: 'https://rukminim2.flixcart.com/image/200/200/xif0q/power-bank/j/i/v/power-bank-dx09-20000-mah-20000-dx09-20k-callmate-original-imagn22tuac3hqnz.jpeg?q=70'
+        },
+        { 
+            name: 'Earphones', 
+            price: 'From ₹399', 
+            offer: 'Up to 75% Off',
+            image: 'https://rukminim2.flixcart.com/image/200/200/kpinwy80/headphone/x/r/e/euro-110-euro-series-earphones-with-mic-boult-audio-original-imag3qkqhyhzeyht.jpeg?q=70'
+        },
+        { 
+            name: 'USB Cable', 
+            price: 'From ₹149', 
+            offer: 'Up to 80% Off',
+            image: 'https://rukminim2.flixcart.com/image/200/200/xif0q/data-cable/usb-type-c-cable/b/b/n/-original-imagq5jqzjqtqjzq.jpeg?q=70'
+        },
+        { 
+            name: 'Mouse', 
+            price: 'From ₹299', 
+            offer: 'Up to 70% Off',
+            image: 'https://rukminim2.flixcart.com/image/200/200/xif0q/mouse/9/3/n/-original-imagsfwbzxwfehtg.jpeg?q=70'
+        }
     ];
     
     const dealsGrid = document.getElementById('dealsProducts');
@@ -278,7 +303,7 @@ function loadMoreProducts() {
         const productCard = document.createElement('div');
         productCard.className = 'product-card';
         productCard.innerHTML = `
-            <img src="https://via.placeholder.com/200x200" alt="${product.name}">
+            <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p class="price">${product.price}</p>
             <p class="offer">${product.offer}</p>
